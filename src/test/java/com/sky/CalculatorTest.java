@@ -14,23 +14,21 @@ public class CalculatorTest {
     @Test
 
     void firstTest() {
-        Calculator.findFactorial(120);
+        assertEquals("5!", Calculator.printFactorial(120));
     }
 
-        @Test
-    void secondTest() {
-        assertEquals(5, Calculator.findFactorial(120));
-    }
+
+
 
     @Test
     void thirdTest() {
-        assertEquals(0, Calculator.findFactorial(150));
+        assertEquals("NONE", Calculator.printFactorial(150));
     }
 
 
     @Test
     void fourthTest() {
-        assertEquals(10, Calculator.findFactorial(3628800));
+        assertEquals("10!", Calculator.printFactorial(3628800));
     }
 
 

@@ -16,8 +16,8 @@ public class Calculator {
     public static String printFactorial(int findFactorialNumber) {
 
             int result = findFactorial(findFactorialNumber);
-            if(result == 0) return "None";
-            else return String.valueOf(result);
+            if(result == 0) return "NONE";
+            else return (String.valueOf(result) + "!");
 
     }
 
